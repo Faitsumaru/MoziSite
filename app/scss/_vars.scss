@@ -1,0 +1,15 @@
+//Container & Breakpoints:
+@use 'sass:math';
+$containerWidth: 1110;
+$containerPadding: 38;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint992: 992 + px;
+$breakpoint768: 768 + px;
+$breakpoint488: 488 + px;
+
+//Colors:
+$blueColor: #1A2578;
+$grayColor: #484C63;
+$redColor: #BF0830;
+$btnHoverColor: #e20a39;
+$whiteColor: #ffffff;

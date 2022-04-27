@@ -28,9 +28,41 @@ h6 {
 }
 
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+	max-width: ($containerWidth + $containerPadding) + px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $containerSidePadding + px;
+
+	@media (max-width: $breakpoint992) {
+		max-width: 978px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		max-width: 750px;
+	}
+
+	@media (max-width: $breakpoint488) {
+		max-width: none;
+	}
+}
+
+.btn {
+	background-color: $redColor;
+	color: $whiteColor;
+	padding: 14px 32px;
+	border-radius: 6px;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 700;
+	display: inline-block;
+	transition: all .4s ease-in;
+	&:hover {
+		background-color: $btnHoverColor;
+	}
+
+	@media (max-width: $breakpoint992) {
+		padding: 12px 26px;
+	}
 }
 
 

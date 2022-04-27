@@ -23,7 +23,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0",
+    "ajax": "^0.0.4",
     "sass": "^1.49.9",
     "slick": "^1.12.2"
   }
