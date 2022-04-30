@@ -1,0 +1,40 @@
+.section {
+    &__brands {
+        padding: 101px 0 128px 0;
+    }
+}
+
+.brands {
+    &__title {
+        margin-bottom: 80px;
+
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 40px;
+        }
+
+        & > span {
+            color: $redColor;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint992) {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        margin: 0 auto;
+        transition: all .4s ease-in;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

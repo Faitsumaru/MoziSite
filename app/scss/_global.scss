@@ -30,6 +30,25 @@ h2 {
 	font-weight: 700;
 	font-size: 44px;
 	line-height: 57px;
+	color: $blueColor;
+}
+
+h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 57px;
+	color: $blueColor;
+	text-align: center;
+
+	@media (max-width: $breakpoint992) {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 22px;
+		line-height: 32px;
+	}
 }
 
 h4 {
@@ -77,6 +96,20 @@ h4 {
 
 	@media (max-width: $breakpoint488) {
 		max-width: none;
+	}
+}
+
+.section {
+	@media (max-width: $breakpoint992) {
+		padding: 75px 0 !important;
+	}
+
+	@media (max-width: $breakpoint768) {
+		padding: 50px 0 !important;
+	}
+
+	@media (max-width: $breakpoint488) {
+		padding: 35px 0 !important;
 	}
 }
 
