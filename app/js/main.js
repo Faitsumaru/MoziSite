@@ -1,30 +1,33 @@
 $(function () {
 
-    fetch("./html/header.html") //adding HTML page (header) in general page (index)
+    htmlFetcher("./html/header.html", "header"); //header
+    htmlFetcher("./html/Home/hero.html", ".section__hero"); //hero
+
+});
+
+function htmlFetcher(url, selector) { //adding HTML page in general page (index)
+    fetch(url) 
         .then(response => {
             return response.text()
         })
         .then(data => {
-            document.querySelector("header").innerHTML = data;
+            document.querySelector(selector).innerHTML = data;
     });
-
-});
+}
 
 function burgerMenu() {     //burger & locked header
     const body = document.querySelector('body');
     const menu = document.querySelector('.menu');
     const burger = document.querySelector('.burger');
-    burger.onclick = () => {
-        if (!menu.classList.contains('--active')) {
-            menu.classList.add('--active');
-            burger.classList.add('--active-burger');
-            body.classList.add('locked');
-        } else {
-            menu.classList.remove('--active');
-            burger.classList.remove('--active-burger');
-            body.classList.remove('locked');
-        }
-    };
+    if (!menu.classList.contains('--active')) {
+        menu.classList.add('--active');
+        burger.classList.add('--active-burger');
+        body.classList.add('locked');
+    } else {
+        menu.classList.remove('--active');
+        burger.classList.remove('--active-burger');
+        body.classList.remove('locked');
+    }
     window.addEventListener('resize', () => {
         if (window.innerWidth > 770) {
             menu.classList.remove('--active');
@@ -33,6 +36,7 @@ function burgerMenu() {     //burger & locked header
         }
     })
 }
+burger.burgerMenu();
 
 function fixedNav() { //scrolling nav fixing
     const nav = document.querySelector('nav');

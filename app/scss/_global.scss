@@ -5,13 +5,47 @@ body {
 	font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+	font-style: normal;
 	font-weight: 700;
+	font-size: 48px;
+	line-height: 62px;
+	color: $blueColor;
+	margin-bottom: 38px;
+
+	@media (max-width: $breakpoint992) {
+		font-size: 38px;
+		line-height: 48px;
+		margin-top: 26px;
+		text-align: center;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 32px;
+		line-height: 42px;
+	}
+}
+
+h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 57px;
+}
+
+h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	color: $grayColor;
+
+	@media (max-width: $breakpoint992) {
+		text-align: center;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 18px;
+		line-height: 24px;
+	}
 }
 
 .wrapper {
@@ -55,6 +89,7 @@ h6 {
 	line-height: 150%;
 	font-weight: 700;
 	display: inline-block;
+	opacity: 0.9;
 	transition: all .4s ease-in;
 	&:hover {
 		background-color: $btnHoverColor;
@@ -65,7 +100,23 @@ h6 {
 	}
 }
 
+.btn__outline {
+	background-color: rgba($whiteColor, .5);
+	color: $redColor;
+	border: 1px solid $redColor;
+	padding: 14px 32px;
+	border-radius: 6px;
+	line-height: 140%;
+	font-weight: 700;
+	display: inline-block;
+	opacity: 0.9;
+	transition: all .4s ease-in;
+	&:hover {
+		color: $whiteColor;
+		background-color: $redColor;
+	}
 
-
-
-
+	@media (max-width: $breakpoint992) {
+		padding: 12px 26px;
+	}
+}
