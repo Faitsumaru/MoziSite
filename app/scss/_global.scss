@@ -3,6 +3,9 @@ body {
 	height: 100%;
 	font-family: 'Europe', sans-serif;
 	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	color: $grayColor;
 }
 
 h1 {
@@ -67,6 +70,15 @@ h4 {
 	}
 }
 
+h6 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: $redColor;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -123,6 +135,7 @@ h4 {
 	font-weight: 700;
 	display: inline-block;
 	opacity: 0.9;
+	z-index: 5;
 	transition: all .4s ease-in;
 	&:hover {
 		background-color: $btnHoverColor;
@@ -143,6 +156,7 @@ h4 {
 	font-weight: 700;
 	display: inline-block;
 	opacity: 0.9;
+	z-index: 5;
 	transition: all .4s ease-in;
 	&:hover {
 		color: $whiteColor;

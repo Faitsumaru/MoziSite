@@ -3,6 +3,7 @@ $(function () {
     htmlFetcher("./html/header.html", "header"); //header
     htmlFetcher("./html/Home/hero.html", ".section__hero"); //hero
     htmlFetcher("./html/brands.html", ".section__brands"); //brands
+    htmlFetcher("./html/Home/products.html", ".section__products"); //products
 
 });
 
