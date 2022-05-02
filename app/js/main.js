@@ -5,7 +5,8 @@ $(function () {
     htmlFetcher("./html/brands.html", ".section__brands"); //brands
     htmlFetcher("./html/Home/products.html", ".section__products"); //products
     htmlFetcher("./html/Home/awards.html", ".section__awards"); //awards & recognition
-
+    htmlFetcher("./html/Home/perspective.html", ".section__perspective"); //perspective
+    
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
