@@ -1,0 +1,43 @@
+.section__awards {
+    padding: 75px 0;
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+        display: block;
+	}
+
+    &__box {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media (max-width: $breakpoint768) {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__pretitle {
+        padding-bottom: 16px;
+    }
+
+    &__title {
+        padding-bottom: 16px;
+    }
+
+    &__img {
+        @media (max-width: $breakpoint992) {
+            max-width: 50%;
+        }
+        @media (max-width: $breakpoint768) {
+            margin: 0 auto;
+            max-width: 85%;
+        }
+    }
+}
