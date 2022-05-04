@@ -6,7 +6,8 @@ $(function () {
     htmlFetcher("./html/Home/products.html", ".section__products"); //products
     htmlFetcher("./html/Home/awards.html", ".section__awards"); //awards & recognition
     htmlFetcher("./html/Home/perspective.html", ".section__perspective"); //perspective
-    
+    htmlFetcher("./html/Home/news.html", ".section__news"); //news
+
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
@@ -51,3 +52,39 @@ function fixedNav() { //scrolling nav fixing
         nav.classList.remove('fixed__nav');
 }
 window.addEventListener('scroll', fixedNav);
+
+
+//---=Slider=---//
+function slider(prev, next) {
+    let position = 0;
+    const slidesToShow = 4;
+    const slidesToScroll = 1;
+    const container = document.querySelector('.slider-container');
+    const track = document.querySelector('.slider-track');
+    const btnPrev = document.querySelector('.btn-prev'); 
+    const btnNext = document.querySelector('.btn-next'); 
+
+    const items = document.querySelectorAll('.slider-item'); //all elems
+    const itemsCount = items.length; //count of all elems
+    const itemWidth = container.clientWidth / slidesToShow; //width of every single element
+    const movePosition = slidesToScroll * itemWidth; //moving slider position (scrollins)
+
+    items.forEach((item) => {
+        item.style.minWidth = `${itemWidth}px`;
+    });
+
+    if (prev == 1 && next == 0) { //prev btn click
+        const itemsLeft = Math.abs(position) / itemWidth;
+        position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+    }
+    
+    if (prev == 0 && next == 1) { //next btn click
+        const itemsRight = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+        position -= itemsRight >= slidesToScroll ? movePosition : itemsRight * itemWidth;
+    }
+
+    track.style.transform = `translateX(${position}px)`;
+
+    btnPrev.disabled = position === 0;
+    btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+}
