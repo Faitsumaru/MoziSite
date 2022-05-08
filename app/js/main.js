@@ -14,6 +14,7 @@ $(function () {
 
     //Products Page:
     htmlFetcher("./html/Products/hero.html", ".section__hero-products"); //hero
+    htmlFetcher("./html/Products/sites.html", ".section__sites"); //hero
 
 });
 

@@ -3,11 +3,18 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+
+//Common:
 @import 'header';
+@import 'footer';
 @import 'hero';
 @import 'brands';
+
+//Home:
 @import './Home/products';
 @import './Home/awards';
 @import './Home/perspective';
 @import './Home/news';
-@import 'footer';
+
+//Products:
+@import './Products/sites';
