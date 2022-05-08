@@ -1,0 +1,41 @@
+.section__team {
+    padding: 136px 0;
+    background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+}
+
+.team {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &__title {
+        line-height: 65px;
+        padding-bottom: 20px;
+
+        @media (max-width: $breakpoint992) {
+            line-height: 44px;
+        }
+    }
+    &__text {
+        padding-bottom: 40px;
+
+        @media (max-width: $breakpoint488) {
+            padding-bottom: 20px;
+        }
+    }
+    &__btn-box {
+        display: inline-flex;
+        gap: 20px; 
+
+        @media (max-width: $breakpoint488) {
+            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }  
+    }
+    &__btn {
+        @media (max-width: $breakpoint488) {
+            width: 100%;
+        }
+    }
+}

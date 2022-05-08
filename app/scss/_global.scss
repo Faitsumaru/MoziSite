@@ -34,6 +34,15 @@ h2 {
 	font-size: 44px;
 	line-height: 57px;
 	color: $blueColor;
+
+	@media (max-width: $breakpoint992) {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 28px;
+		line-height: 38px;
+	}
 }
 
 h3 {
