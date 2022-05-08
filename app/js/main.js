@@ -12,6 +12,9 @@ $(function () {
     htmlFetcher("./html/Home/perspective.html", ".section__perspective"); //perspective
     htmlFetcher("./html/Home/news.html", ".section__news"); //news
 
+    //Products Page:
+    htmlFetcher("./html/Products/hero.html", ".section__hero-products"); //hero
+
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
