@@ -20,7 +20,8 @@ $(function () {
     //About Page:
     htmlFetcher("./html/About/hero.html", ".section__hero-about"); //hero
     htmlFetcher("./html/About/stats.html", ".section__stats"); //statistics
-
+    htmlFetcher("./html/About/culture.html", ".section__culture"); //culture
+    
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
