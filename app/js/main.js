@@ -22,6 +22,7 @@ $(function () {
     htmlFetcher("./html/About/stats.html", ".section__stats"); //statistics
     htmlFetcher("./html/About/culture.html", ".section__culture"); //culture
     htmlFetcher("./html/About/info.html", ".section__info"); //information
+    htmlFetcher("./html/About/hiring.html", ".section__hiring"); //hiring
     
 });
 
