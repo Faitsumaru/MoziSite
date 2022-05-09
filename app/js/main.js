@@ -19,6 +19,7 @@ $(function () {
 
     //About Page:
     htmlFetcher("./html/About/hero.html", ".section__hero-about"); //hero
+    htmlFetcher("./html/About/stats.html", ".section__stats"); //statistics
 
 });
 
