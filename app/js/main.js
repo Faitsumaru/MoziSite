@@ -5,7 +5,7 @@ $(function () {
     htmlFetcher("./html/footer.html", "footer"); //footer
 
     //Home Page:
-    htmlFetcher("./html/Home/hero.html", ".section__hero"); //hero
+    htmlFetcher("./html/Home/hero.html", ".section__hero-main"); //hero
     htmlFetcher("./html/brands.html", ".section__brands"); //brands
     htmlFetcher("./html/Home/products.html", ".section__products"); //products
     htmlFetcher("./html/Home/awards.html", ".section__awards"); //awards & recognition
@@ -21,6 +21,7 @@ $(function () {
     htmlFetcher("./html/About/hero.html", ".section__hero-about"); //hero
     htmlFetcher("./html/About/stats.html", ".section__stats"); //statistics
     htmlFetcher("./html/About/culture.html", ".section__culture"); //culture
+    htmlFetcher("./html/About/info.html", ".section__info"); //information
     
 });
 
