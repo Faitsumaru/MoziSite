@@ -17,6 +17,9 @@ $(function () {
     htmlFetcher("./html/Products/sites.html", ".section__sites"); //sites
     htmlFetcher("./html/Products/team.html", ".section__team"); //team
 
+    //About Page:
+    htmlFetcher("./html/About/hero.html", ".section__hero-about"); //hero
+
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
