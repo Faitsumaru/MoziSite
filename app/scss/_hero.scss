@@ -106,7 +106,6 @@
                         max-width: 400px;
                         right: 50%;
                         transform: translateX(50%);
-
                     }
                     @media (max-width: $breakpoint768) {
                         max-width: 335px;
@@ -118,6 +117,32 @@
                         transform: translate(-50%, 0);
                     }
                 }
+            }
+        }
+
+        &__hero-career {
+            overflow: hidden;
+            padding: 175px 0 225px 0;
+
+            .hero__img {
+                right: 175px;
+                bottom: -50px;
+
+                @media (max-width: $breakpoint1400) {
+                    right: 15px;
+                }
+                @media (max-width: $breakpoint992) {
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: -30px;
+                }
+            }
+
+            @media (max-width: $breakpoint992) {
+                padding: 50px 0 280px 0;
+            }
+            @media (max-width: $breakpoint768) {
+                padding: 40px 0 235px 0;
             }
         }
     }
@@ -171,6 +196,36 @@
 
             @media (max-width: $breakpoint992) {
                 flex: 1 1 100%;
+            }
+        }
+
+        &__box-career {
+            flex: 0 1 50%;
+
+            @media (max-width: $breakpoint992) {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .hero__box-title {
+                margin-bottom: 10px;
+
+                &-red {
+                    color: $redColor;
+                    margin-bottom: 20px;
+                    @media (max-width: $breakpoint768) {
+                        margin-top: 10px;
+                    }
+                }
+
+                @media (max-width: $breakpoint768) {
+                    margin-top: 10px;
+                }
+            }
+            .hero__btn {
+                @media (max-width: $breakpoint768) {
+                    margin-top: 0;
+                }
             }
         }
     }

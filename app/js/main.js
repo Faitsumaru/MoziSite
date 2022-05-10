@@ -23,6 +23,9 @@ $(function () {
     htmlFetcher("./html/About/culture.html", ".section__culture"); //culture
     htmlFetcher("./html/About/info.html", ".section__info"); //information
     htmlFetcher("./html/About/hiring.html", ".section__hiring"); //hiring
+
+    //Career Page:
+    htmlFetcher("./html/Career/hero.html", ".section__hero-career"); //hero
     
 });
 
