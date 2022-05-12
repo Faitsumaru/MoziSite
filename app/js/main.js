@@ -26,6 +26,7 @@ $(function () {
 
     //Career Page:
     htmlFetcher("./html/Career/hero.html", ".section__hero-career"); //hero
+    htmlFetcher("./html/Career/advantages.html", ".section__advantages"); //advantages
     
 });
 
