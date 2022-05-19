@@ -29,6 +29,7 @@ $(function () {
     htmlFetcher("./html/Career/advantages.html", ".section__advantages"); //advantages
     htmlFetcher("./html/Career/life.html", ".section__life"); //life
     htmlFetcher("./html/Career/write.html", ".section__write"); //write
+    htmlFetcher("./html/Career/pack.html", ".section__pack") //pack
     
 });
 
