@@ -31,6 +31,8 @@ $(function () {
     htmlFetcher("./html/Career/write.html", ".section__write"); //write
     htmlFetcher("./html/Career/pack.html", ".section__pack") //pack
     
+    //Contact Page:
+    htmlFetcher("./html/Contact/hero.html", ".section__hero-contact"); //hero
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)

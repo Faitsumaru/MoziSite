@@ -145,6 +145,39 @@
                 padding: 40px 0 235px 0;
             }
         }
+
+        &__hero-contact {
+            overflow: hidden;
+            padding: 93px 0 140px 0;
+
+            @media (max-width: $breakpoint992) {
+                padding: 30px 0 310px 0;
+            }
+            @media (max-width: $breakpoint768) {
+                padding: 30px 0 275px 0;
+            }
+            @media (max-width: $breakpoint488) {
+                padding: 30px 0 240px 0;
+            }
+            
+            .hero__img {
+                right: 200px;
+                bottom: -45%;
+
+                @media (max-width: $breakpoint1400) {
+                    right: 20px;
+                    bottom: -35%;
+                }
+                @media (max-width: $breakpoint992) {
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: -18%;
+                }
+                @media (max-width: $breakpoint768) {
+                    bottom: -15%;
+                }
+            }
+        }
     }
 
     .hero {
@@ -226,6 +259,29 @@
                 @media (max-width: $breakpoint768) {
                     margin-top: 0;
                 }
+            }
+        }
+
+        &__box-contact {
+            flex: 0 1 50%;
+
+            @media (max-width: $breakpoint992) {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .hero__box-text {
+                font-size: 18px;
+                line-height: 33px;
+            }
+
+            .hero__btn {
+                margin-top: 40px;
+
+                @media (max-width: $breakpoint992) {
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                }    
             }
         }
     }
