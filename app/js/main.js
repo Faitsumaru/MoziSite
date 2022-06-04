@@ -33,6 +33,7 @@ $(function () {
     
     //Contact Page:
     htmlFetcher("./html/Contact/hero.html", ".section__hero-contact"); //hero
+    htmlFetcher("./html/Contact/connection.html", ".section__connection"); //connection
 });
 
 function htmlFetcher(url, selector) { //adding HTML page in general page (index)
@@ -112,4 +113,19 @@ function slider(prev, next) {
 
     btnPrev.disabled = position === 0;
     btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+}
+
+function formSending() {
+    const name = document.querySelector('.form__text--name');
+    const mail = document.querySelector('.form__text--mail');
+    const subject = document.querySelector('.form__text--subject');
+    const message = document.querySelector('.form__message');
+    const button = document.querySelector('.form__btn');
+
+    if (name.value == "" || mail.value == "" || subject.value == "" || message.value == "") {
+        alert('Empty fields.\nPlease try again!');
+    }
+    else {
+        alert('Successfully done! 👌👌👌');
+    }
 }

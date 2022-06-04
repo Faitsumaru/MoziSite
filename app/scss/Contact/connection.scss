@@ -1,0 +1,125 @@
+.section__connection {
+    padding: 100px 130px;
+}
+
+.connection {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+        display: block;
+    }
+
+    &__location {
+        width: 366px;
+        margin-top: 115px;
+        display: block;
+
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+            margin-top: 50px;
+        }
+
+        &-item + &-item {
+            margin-top: 72px;
+
+            @media (max-width: $breakpoint768) {
+                margin-top: 40px;
+            }
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 700;
+            padding-left: 60px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 27px;
+                left: 0;
+            }
+
+            &--first {
+                &::before {
+                    background-image: url(../../images/contact/flag1.png);
+                    }
+            }
+            &--second, &--third {
+                &::before {
+                    background-image: url(../../images/contact/flag2.png);
+                }
+            }
+        }
+        
+        &-text {
+            margin-top: 25px;
+            max-width: 280px;
+
+            @media (max-width: $breakpoint768) {
+                max-width: 100%;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.form {
+    padding: 40px;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+    width: 540px;
+    margin-right: 50px;
+
+    @media (max-width: $breakpoint768) {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    &__title {
+        color: #8F90A6;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 16px 26px;
+        border: 1px solid #E3E7F6;
+        border-radius: 6px;
+    }
+
+    &__box {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 6px;
+    }
+
+    &__message {
+        resize: none;
+        height: 148px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 6px;
+    }
+
+    &__btn {
+        max-width: 101px;
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+        }
+    }
+}
