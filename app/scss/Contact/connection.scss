@@ -45,12 +45,12 @@
 
             &--first {
                 &::before {
-                    background-image: url(../../images/contact/flag1.png);
+                    background-image: url(images/contact/flag1.png);
                     }
             }
             &--second, &--third {
                 &::before {
-                    background-image: url(../../images/contact/flag2.png);
+                    background-image: url(images/contact/flag2.png);
                 }
             }
         }
